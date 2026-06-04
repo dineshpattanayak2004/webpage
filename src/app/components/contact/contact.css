@@ -1,0 +1,156 @@
+/* Contact Form Styling */
+
+h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:25px;
+    font-size:32px;
+    text-shadow:0 0 10px rgba(56,189,248,0.5);
+}
+
+label{
+    display:block;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+input{
+    width:100%;
+    max-width:450px;
+    padding:14px;
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,0.1);
+    color:white;
+
+    transition:0.4s ease;
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+input::placeholder{
+    color:#cbd5e1;
+}
+
+input:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 15px rgba(56,189,248,0.4);
+}
+
+input:focus{
+    border-color:#38bdf8;
+
+    box-shadow:
+    0 0 10px #38bdf8,
+    0 0 20px rgba(56,189,248,0.4);
+
+    transform:scale(1.02);
+}
+
+h3{
+    margin-top:25px;
+    color:#60a5fa;
+}
+
+p{
+    color:#e2e8f0;
+    margin:10px 0;
+    padding:12px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.06);
+
+    transition:0.3s;
+}
+
+p:hover{
+    background:rgba(255,255,255,0.12);
+    transform:translateX(8px);
+}
+
+button{
+    margin-top:20px;
+
+    padding:14px 35px;
+
+    border:none;
+    border-radius:30px;
+
+    font-size:16px;
+    font-weight:bold;
+
+    color:white;
+    cursor:pointer;
+
+    background:linear-gradient(
+        45deg,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    transition:0.5s ease;
+}
+
+button:hover{
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:
+    0 0 15px #38bdf8,
+    0 0 30px #8b5cf6;
+}
+
+button:active{
+    transform:scale(0.96);
+}
+
+/* Form Container Effect */
+
+body{
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+
+    padding:40px;
+    font-family:'Poppins',sans-serif;
+}
+
+form,
+.contact-box{
+    max-width:550px;
+    margin:auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:0 8px 30px rgba(0,0,0,0.3);
+
+    transition:0.5s;
+}
+
+form:hover,
+.contact-box:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 20px #38bdf8,
+    0 0 40px rgba(56,189,248,0.3);
+}
